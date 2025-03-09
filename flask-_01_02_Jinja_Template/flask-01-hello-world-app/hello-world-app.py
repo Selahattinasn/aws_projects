@@ -1,17 +1,18 @@
 from flask import Flask
 app = Flask(__name__)
-@app.route('/')
 
+@app.route('/')
 def head():
      return "Hello World"
-@app.route('/secondpage')
 
+@app.route('/secondpage')
 def second():
      return "This is second page!"
-@app.route('/thirdpage')
 
+@app.route('/thirdpage')
 def third():
      return "This is thirth page!"
+
 @app.route('/fourth/<string:id>')
 def fourt(id):
      return f'id of this page is {id}!'
