@@ -7,8 +7,8 @@ app = Flask(__name__)
 # and assign to the route of ('/')
 @app.route("/")
 def head():
-    first="This is my first conditions experience"
-    return render_template("index.html")
+    message="This is my first conditions experience"
+    return render_template("index.html", message = message)
 
 
 # Create a function named header which prints numbers elements of list one by one in `index.html` 
@@ -16,12 +16,12 @@ def head():
 @app.route("/list")
 def header():
     names =["tom", "osvaldo", "guile", "tommy"]
-    # numbers = range (1,11)
+    #numbers = range (1,11)
     return render_template("body.html", object = names)
 
 
 # run this app in debug mode on your local.
 if __name__== "__main__":
-    # app.run(debug=True)
+    #app.run(debug=True, port=3000)
     app.run(host='0.0.0.0', port=80)
 
