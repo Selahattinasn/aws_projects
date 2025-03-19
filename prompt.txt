@@ -1,0 +1,5 @@
+echo "PS1='\[\e[0;32m\]\u\[\e[m\]@\[\e[0;33m\]\h\[\e[m\] \[\e[0;31m\]\t\[\e[m\] \[\e[0;36m\]\w\[\e[m\]$ ' " >> ~/.bashrc
+
+echo "PS1='\[\e[38;5;82m\]\u\[\e[0m\]@\[\e[38;5;69m\]\h\[\e[0m\]:\[\e[38;5;198m\]\w\[\e[0m\] \$ ' "  >> ~/.bashrc
+
+https://bash-prompt-generator.org/
